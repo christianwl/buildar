@@ -6,7 +6,7 @@ import { Link, Outlet, useNavigate } from 'react-router-dom'; // Importando Link
 // import logo from './images/logo_on.webp';
 // import forma2 from './images/forma2.webp';
 import forma1 from './images/forma1.webp';
-import Header from '../headersEfooters/Header//Header';
+import Header from '../headersEfooters/Header/Header';
 import { useTranslation } from 'react-i18next';
 import "../../config/i18n";
 import { setNomeUsuario } from '../../shared/useNomeUsuario';
