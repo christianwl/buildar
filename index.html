@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site para você por em prática suas softkills"
+    />
+    <title>Buildar - Habilidades para moldar, futuro para conquistar</title>
+  </head>
+  <body>
+    <!-- Limpa o console logo no início do carregamento -->
+    <script>
+      if (window.location.hostname === "localhost") {
+        console.clear();
+      }
+    </script>
+    <div id="root"></div>
+    <!-- 
+    // Codigo para VLibras: plugin de acessibilidade em Libras
+
+     // OBS ⚠: Está comentado pois algumas vezes no localHost não funciona e gera um erro no console
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script> 
+  -->
+
+    <!-- Novo script para o Plugin do VLibras para evitar erros de inicialização no console -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+
+    <script>
+      // Cria e configura o elemento de script
+      const script = document.createElement("script");
+      script.src = "https://vlibras.gov.br/app/vlibras-plugin.js";
+      script.onload = () => {
+        if (window.VLibras && typeof window.VLibras.Widget === "function") {
+          new window.VLibras.Widget("https://vlibras.gov.br/app");
+          console.log("VLibras Widget inicializado com sucesso.");
+        } else {
+          console.log("VLibras Widget não pôde ser inicializado.");
+        }
+      };
+
+      script.onerror = () => {
+        console.log("Erro ao carregar o script do VLibras.");
+      };
+
+      document.head.appendChild(script);
+    </script>
+
+    <!-- Script para detectar e substituir erros no console especificos
+    <script>
+      // Guarda o console.error original para que ainda possamos usá-lo quando necessário
+      const originalConsoleError = console.error;
+      
+      // Sobrescreve console.error para suprimir mensagens específicas
+      console.error = (...args) => {
+        // Verifica se a mensagem de erro inclui alguma palavras-chave
+        if (args.some(arg => typeof arg === 'string' && arg.includes("texto"))) {
+          // Exibe uma mensagem de log leve no console em vez do erro completo
+          console.log("Erro de 'descreva erro especifico'");
+        } else {
+          // Caso contrário, exibe o erro normalmente
+          originalConsoleError(...args);
+        }
+      };
+    </script>
+  -->
+    <!-- 
+  <script>
+    // Código para o Assistive: Plugin para acessibilidade
+    /*
+      // OBS ⚠: Está comentado pois fora do servidor Vercel indica erro no console por não carregar
+
+      (function() { 
+        var s = document.createElement('script'); 
+        var h = document.querySelector('head') || document.body; 
+        s.charset="UTF-8"; 
+        s.src = 'https://cdn.assistive.com.br/plugin/AssistiveWebPlugin.js'; 
+        s.async = true; 
+        s.onload = function(){ assistive.init({});}; 
+        h.appendChild(s); 
+      })(); 
+    */
+  </script> 
+-->
+
+    <!-- Código para o Assistive: Plugin para acessibilidade 
+com tratamento para apenas funcionar em um servidor, evitando erros no console -->
+    <script>
+      (function () {
+        if (window.location.hostname !== "localhost") {
+          var s = document.createElement("script");
+          var h = document.querySelector("head") || document.body;
+
+          s.charset = "UTF-8";
+          s.src = "https://cdn.assistive.com.br/plugin/AssistiveWebPlugin.js";
+          s.async = true;
+
+          s.onload = function () {
+            if (
+              window.assistive &&
+              typeof window.assistive.init === "function"
+            ) {
+              window.assistive.init({});
+              console.log("Assistive script carregado com sucesso.");
+            }
+          };
+
+          s.onerror = function () {
+            console.log(
+              "Erro ao carregar o Assistive script: não pôde ser acessado."
+            );
+          };
+
+          h.appendChild(s);
+        } else {
+          console.log(
+            "Assistive script não será carregado no ambiente de desenvolvimento 'localHost'."
+          );
+        }
+      })();
+    </script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

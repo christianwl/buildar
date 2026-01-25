@@ -1,9 +1,9 @@
 import './banner.css';
-import Header from './HeaderHome.js';
+import Header from './HeaderHome.jsx';
 // import fundo from './images/image_fundo.webp';
 // import { Outlet, Link } from "react-router-dom";
-import Elevadores from "./Elevadores.js"
-import Footer from '../headersEfooters/footerPreLogin/Footer.js';
+import Elevadores from "./Elevadores.jsx"
+import Footer from '../headersEfooters/footerPreLogin/Footer.jsx';
 import { useTranslation } from 'react-i18next';
 
 

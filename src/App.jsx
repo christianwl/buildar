@@ -1,24 +1,22 @@
 // Imports de Bibliotecas
-import { HTML5Backend } from 'react-dnd-html5-backend';
-import { DndProvider } from 'react-dnd';
+import { HTML5Backend } from "react-dnd-html5-backend";
+import { DndProvider } from "react-dnd";
 
-// Imports de Context Provider 
+// Imports de Context Provider
 /* OBS: Context Provider é uma funcionalidade do React que permite compartilhar dados globalmente
 em toda a árvore de componentes, sem a necessidade de passar props manualmente em cada nível.*/
-import { ItemProvider } from './pages/conteudo/Itens';
+import { ItemProvider } from "./pages/conteudo/Itens.jsx";
 
 // Imports de componentes funcionais
-import Rotas from './routes/Rotas.js';
-import IdiomaController from './controllers/IdiomaController.js'
+import Rotas from "./routes/Rotas.jsx";
+import IdiomaController from "./controllers/IdiomaController.jsx";
 
 // Imports de CSS
-import './App.css';
+import "./App.css";
 
 export default function App() {
-
   return (
     <div className="App">
-
       <DndProvider backend={HTML5Backend}>
         <ItemProvider>
           <Rotas />
@@ -26,7 +24,6 @@ export default function App() {
       </DndProvider>
 
       <IdiomaController />
-
-    </div >
+    </div>
   );
 }

@@ -4,7 +4,7 @@ import "./FaleConosco.css";
 import circuloesquerdo from "./images/circuloesquerdo.webp";
 import circulodireito from "./images/circulodireito.webp"; 
 // import { Link } from 'react-router-dom';
-import Header from '../headersEfooters/Header//Header';
+import Header from '../headersEfooters/Header/Header';
 import { useTranslation } from 'react-i18next';
 
 

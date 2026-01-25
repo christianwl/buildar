@@ -10,38 +10,38 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 //---------------------------------------------------------------|
 
 // Components acessiveis da landingPage
-import LandingPage from '../pages/landingPage/LandingPage.js';
-import Login from '../pages/entrada/Login.js';
-import Cadastro from '../pages/entrada/Cadastro.js';
-import SobreNosTentativa from '../pages/sobreTentativa/SobreNos.js';
-import FaleConosco from '../pages/faleConosco/FaleConosco.js';
-import Termos from '../pages/termos/Termos.js';
+import LandingPage from '../pages/landingPage/LandingPage.jsx';
+import Login from '../pages/entrada/Login.jsx';
+import Cadastro from '../pages/entrada/Cadastro.jsx';
+import SobreNosTentativa from '../pages/sobreTentativa/SobreNos.jsx';
+import FaleConosco from '../pages/faleConosco/FaleConosco.jsx';
+import Termos from '../pages/termos/Termos.jsx';
 
 // Components acessiveis do Home
-import Home from '../pages/home/Home.js';
-import Corredor from '../pages/corredor/Corredor.js';
-import Pratica from '../pages/conteudo/Pratica.js';
-import Conteudos from '../pages/conteudo/Conteudos.js';
-import Conteudo6 from '../pages/conteudo/Conteudo6.js';
-import Conteudo7 from '../pages/conteudo/Conteudo7.js';
+import Home from '../pages/home/Home.jsx';
+import Corredor from '../pages/corredor/Corredor.jsx';
+import Pratica from '../pages/conteudo/Pratica.jsx';
+import Conteudos from '../pages/conteudo/Conteudos.jsx';
+import Conteudo6 from '../pages/conteudo/Conteudo6.jsx';
+import Conteudo7 from '../pages/conteudo/Conteudo7.jsx';
 
 // Components acessiveis de Conexoes
-import Conexoes from '../pages/conexoes/Conexoes.js';
-import Voluntario from '../pages/inscricaoVoluntario/Voluntario.js';
+import Conexoes from '../pages/conexoes/Conexoes.jsx';
+import Voluntario from '../pages/inscricaoVoluntario/Voluntario.jsx';
 
 // Components acessiveis da Loja
-import Loja from '../pages/loja/Loja.js';
-import Pagamento from '../pages/pagamento/Pagamento.js';
+import Loja from '../pages/loja/Loja.jsx';
+import Pagamento from '../pages/pagamento/Pagamento.jsx';
 
 // Componente do Perfil
-import Perfil from '../pages/perfil/Perfil.js';
+import Perfil from '../pages/perfil/Perfil.jsx';
 
 // Components acessiveis da Area de Descanso
-import AreaDescanso from '../pages/areaDescanso/AreaDescanso.js';
-import GameDescanso from '../GameDescanso.js';
-import InicioQuiz from '../pages/quiz/InicioQuiz.js'
-import Quiz from '../pages/quiz/Quiz1.js';
-import Quiz2 from '../pages/quiz/Quiz2.js';
+import AreaDescanso from '../pages/areaDescanso/AreaDescanso.jsx';
+import GameDescanso from '../GameDescanso';
+import InicioQuiz from '../pages/quiz/InicioQuiz.jsx'
+import Quiz from '../pages/quiz/Quiz1.jsx';
+import Quiz2 from '../pages/quiz/Quiz2.jsx';
 
 //---------------------------------------------------------------|
 

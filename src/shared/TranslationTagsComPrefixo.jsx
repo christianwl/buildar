@@ -2,7 +2,7 @@
 import useControleDeTraducao from './useControleDeTraducao';
 
 import {Trans as OriginalTrans} from 'react-i18next'
-import RainbowWaveText from '../shared/TAnimacoesTexto.js';
+import RainbowWaveText from './TAnimacoesTexto.jsx';
 
 export const TranslationTagsComPrefixo = ({ i18nKey, values, components, prefixOverride, usarControleDeLinha = true}) => {
     const { t, tFormatado} = useControleDeTraducao();  // Agora pegamos o prefixo do contexto

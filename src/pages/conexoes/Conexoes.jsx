@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import HeaderHome from '../home/HeaderHome';
 import Footer from '../headersEfooters/footerPreLogin/Footer';
-import EventSearch from '../conexoes/EventSearch';
+import EventSearch from './EventSearch';
 import forma from '../conexoes/images/forma branca.webp';
 import Forma2 from './images/amarelo lilas azul.webp';
 import imgFormulario from '../conexoes/images/imagem formulario.webp';
