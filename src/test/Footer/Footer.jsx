@@ -30,8 +30,8 @@
 
 //   return (
 //     <footer id='footer'>
-//       <div className="footerTop">
-//         <section className="linkList">
+//       <div className="footer-top">
+//         <section className="link-list">
 //           <div className="footer-links">
 //             <div className="link-group">
 //               {/* <Link to="#">{t("Quem somos")}</Link> */}
@@ -56,11 +56,11 @@
 //           <p className="footer-rigth">{t("Rights")}</p>
 //         </Link>
 //       </div>
-//       <div className="breakBar"></div>
-//       <div className="footerBottom">
-//         <section className="linkList">
-//           <Link to="/termos"  className="footer-linkList">{t("Privacy")}</Link>
-//           <Link to="/termos" className="footer-linkList">{t("Terms")}</Link>
+//       <div className="break-bar"></div>
+//       <div className="footer-bottom">
+//         <section className="link-list">
+//           <Link to="/termos"  className="footer-link-list">{t("Privacy")}</Link>
+//           <Link to="/termos" className="footer-link-list">{t("Terms")}</Link>
 //         </section>
 //         <section className="social">
 //           <a href="https://www.instagram.com/buildar_demoday/" target="_blank" rel="noopener">
@@ -77,7 +77,7 @@
 //           </a>
 //         </section>
 //       </div>
-      
+
 //       <div className='languageButton'>
 //         <select name="language" id="language" aria-placeholder='Idioma' onChange={handleLanguageChange} value={selectedLanguage}>
 //           <option value="pt">🇧🇷</option>

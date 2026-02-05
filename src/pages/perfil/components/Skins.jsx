@@ -2,16 +2,16 @@ import React, { useState, useEffect } from 'react';
 
 import Skin from './Skin';
 
-import Avatar1 from '@/assets/avatar/Rogerio_avatar.png';
-import Avatar2 from '@/assets/avatar/Malu_avatar.png';
-import Avatar3 from '@/assets/avatar/Tobias_avatar.png';
+import rogerio from '@/assets/avatar/rogerio.png';
+import malu from '@/assets/avatar/malu.png';
+import tobias from '@/assets/avatar/tobias.png';
 
 import '../Perfil.css';
 
 const skinData = [
-    { url: Avatar1, id: 'avatar1' },
-    { url: Avatar2, id: 'avatar2' },
-    { url: Avatar3, id: 'avatar3' }
+    { url: rogerio, id: 'avatar1' },
+    { url: malu, id: 'avatar2' },
+    { url: tobias, id: 'avatar3' }
 ];
 
 export default function Conquistas() {

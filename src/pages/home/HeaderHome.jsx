@@ -4,7 +4,7 @@ import "@/config/i18n";
 
 import BtnsNav from './BtnsNav';
 
-import logo from '@/assets/logo/logoOn.webp';
+import logoOn from '@/assets/logo/logo-on.webp';
 
 import './headerHome.css'
 
@@ -48,7 +48,7 @@ export default function HeaderHome() {
     <header id='headerHome'>
       <nav>
         <Link to="/home">
-          <img alt='Logo da Buildar' src={logo} className='logo' />
+          <img alt='Logo da Buildar' src={logoOn} className='logo' />
         </Link>
         {textoBtn.map((object, index) => (
           <BtnsNav key={index} texto={object.texto} link={object.linkado} icon={object.icon}></BtnsNav>

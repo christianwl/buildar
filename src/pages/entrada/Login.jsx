@@ -1,15 +1,15 @@
-import { useState } from 'react';
-import { Link, Outlet, useNavigate } from 'react-router-dom'; // Importando Link e Outlet
-import { useTranslation } from 'react-i18next';
+import { useState } from "react";
+import { Link, Outlet, useNavigate } from "react-router-dom"; // Importando Link e Outlet
+import { useTranslation } from "react-i18next";
 import "@/config/i18n";
 
-import { setNomeUsuario } from '@/shared/useNomeUsuario';
+import { setNomeUsuario } from "@/shared/useNomeUsuario";
 
-import Header from '../headersEfooters/Header/Header';
+import Header from "@/components/layout/Header";
 
-import formaLogin1 from './images/formaLogin1.webp';
+import formaLogin1 from "./images/formaLogin1.webp";
 
-import './Login.css';
+import "./Login.css";
 
 // import forma3 from './images/Vector-3.webp';
 // import forma from './images/Vector.webp';
@@ -17,65 +17,68 @@ import './Login.css';
 // import forma2 from './images/forma2.webp';
 
 export default function Login() {
-    const { t } = useTranslation();
-    const navigate = useNavigate();
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [errorMessage, setErrorMessage] = useState('');
+  const { t } = useTranslation();
+  const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-        if (email === '' || password === '') {
-            setErrorMessage('Please fill in all fields.');
-        } else {
-            setErrorMessage('');
-            setNomeUsuario({apelido: false, valor: email})
-            navigate('/home');
-        }
-    };
+    if (email === "" || password === "") {
+      setErrorMessage("Please fill in all fields.");
+    } else {
+      setErrorMessage("");
+      setNomeUsuario({ apelido: false, valor: email });
+      navigate("/home");
+    }
+  };
 
-    return (
-        <main id="login">
-            <img src={formaLogin1} alt="forma1" className='forma1' />
-            <Header classe='loginHeader'/>
-            <article>
-                <div className='caixa-esquerda'>
-                    <h1>{t('welcomeBack')}</h1>
-                </div>
-                <div className='caixa-direita' id='CaixaLogin'>
-                    <h1>{t('login')}</h1>
-                    <form onSubmit={handleSubmit}>
-                        <h3>{t("Email")}</h3>
-                        <input
-                            type="email"
-                            name="email"
-                            id="email"
-                            placeholder={t("email")}
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            required
-                        />
-                        <h3>{t("Password")}</h3>
-                        <input
-                            type="password"
-                            name="password"
-                            id="password"
-                            placeholder={t('enterYourPassword')}
-                            value={password}
-                            onChange={(e) => setPassword(e.target.value)}
-                            required
-                        />
-                        {errorMessage && <p style={{color: 'red'}}>{errorMessage}</p>}
-                        <input type="submit" id="submit" value={t('submit')} />
-                    </form>
-                    <Link to="/cadastro">
-                        <p>{t('dontHaveAccount')}<strong>{t('SignUp')}</strong></p>
-                    </Link>
-                </div>
-            </article>
+  return (
+    <main id="login">
+      <img src={formaLogin1} alt="forma1" className="forma1" />
+      <Header classe="loginHeader" />
+      <article>
+        <div className="caixa-esquerda">
+          <h1>{t("welcomeBack")}</h1>
+        </div>
+        <div className="caixa-direita" id="CaixaLogin">
+          <h1>{t("login")}</h1>
+          <form onSubmit={handleSubmit}>
+            <h3>{t("Email")}</h3>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder={t("email")}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+            <h3>{t("Password")}</h3>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder={t("enterYourPassword")}
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
+            {errorMessage && <p style={{ color: "red" }}>{errorMessage}</p>}
+            <input type="submit" id="submit" value={t("submit")} />
+          </form>
+          <Link to="/cadastro">
+            <p>
+              {t("dontHaveAccount")}
+              <strong>{t("SignUp")}</strong>
+            </p>
+          </Link>
+        </div>
+      </article>
 
-            <Outlet />
-        </main>
-    );
+      <Outlet />
+    </main>
+  );
 }

@@ -1,36 +1,36 @@
 // Imports de Bibliotecas
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 // Imports de Hooks
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
-import useControleDeTraducao from '@/shared/useControleDeTraducao';
+import useControleDeTraducao from "@/shared/useControleDeTraducao";
 
 // Imports de Components
 import HeaderHome from "../home/HeaderHome";
-import Footer from '../headersEfooters/footerPreLogin/Footer';
+import Footer from "@/components/layout/Footer";
 
-import mascot from './images/mascot.png';
-import targetIcon from './images/target.webp';
-import careerIcon from './images/career.webp';
-import skillsIcon from './images/skills.webp';
-import peopleIcon from './images/people.png'; // New icons for the new section
-import schoolIcon from './images/school.png';
-import environmentIcon from './images/environment.png';
-import ods from './images/ods.png'
+import mascot from "./images/mascot.png";
+import targetIcon from "./images/target.webp";
+import careerIcon from "./images/career.webp";
+import skillsIcon from "./images/skills.webp";
+import peopleIcon from "./images/people.png"; // New icons for the new section
+import schoolIcon from "./images/school.png";
+import environmentIcon from "./images/environment.png";
+import ods from "./images/ods.png";
 
 // Importing team images
-import teamMember1 from './images/teamMember1.png';
-import teamMember2 from './images/teamMember2.png';
-import teamMember3 from './images/teamMember3.png';
-import teamMember4 from './images/teamMember4.png';
-import teamMember5 from './images/teamMember5.png';
-import teamMember6 from './images/teamMember6.png';
-import teamMember7 from './images/teamMember7.png';
-import teamMember8 from './images/teamMember8.png';
+import teamMember1 from "./images/teamMember1.png";
+import teamMember2 from "./images/teamMember2.png";
+import teamMember3 from "./images/teamMember3.png";
+import teamMember4 from "./images/teamMember4.png";
+import teamMember5 from "./images/teamMember5.png";
+import teamMember6 from "./images/teamMember6.png";
+import teamMember7 from "./images/teamMember7.png";
+import teamMember8 from "./images/teamMember8.png";
 
 // Imports do CSS
-import './SobreNos.css';
+import "./SobreNos.css";
 
 // import { useTranslation } from 'react-i18next';
 
@@ -46,24 +46,30 @@ const SobreNos = () => {
     <>
       <HeaderHome />
       <section className="SobreNos1">
-        <div className='bannerSobre'>
-          <div className='bannerCapsula'></div>
+        <div className="bannerSobre">
+          <div className="bannerCapsula"></div>
           <h1>{t("aboutUs")}</h1>
         </div>
         <div className="content1">
           <div className="text-section1">
             <h2>{t("originBuildar")}</h2>
             <p>{t("foundedBy")}</p>
-            <a href="#!" className="ver-mais1" onClick={(e) => e.preventDefault()} aria-disabled="true">{t("seeMore")}</a>
+            <a
+              href="#!"
+              className="ver-mais1"
+              onClick={(e) => e.preventDefault()}
+              aria-disabled="true"
+            >
+              {t("seeMore")}
+            </a>
           </div>
           <img src={mascot} alt={t("mascotBuildar")} className="mascot1" />
         </div>
       </section>
-      <div className='retangulos'></div>
-
+      <div className="retangulos"></div>
 
       <section className="OurWork1">
-        <div className='bannerMVV'>
+        <div className="bannerMVV">
           <h2>{t("ourPurpose")}</h2>
           <p className="intro">{t("buildarCommitment")}</p>
         </div>
@@ -75,7 +81,6 @@ const SobreNos = () => {
               <h3>{t("ourWork")}</h3>
               <p>{t("orientYouth")}</p>
             </div>
-
           </div>
           <div className="work-item2">
             <img src={careerIcon} alt={t("careerPlan")} />
@@ -83,20 +88,21 @@ const SobreNos = () => {
               <h3>{t("careerPlan")}</h3>
               <p>{t("platformGoal")}</p>
             </div>
-
           </div>
           <div className="work-item3">
             <img src={skillsIcon} alt={t("buildarSoftSkills")} />
             <div>
               <h3>{t("buildarSoftSkills")}</h3>
-              <p>{t("determination")} ● {t("innovation")} ● {t("welcome")}</p>
+              <p>
+                {t("determination")} ● {t("innovation")} ● {t("welcome")}
+              </p>
             </div>
           </div>
         </div>
       </section>
 
       <section className="Goals">
-        <div className='text-goals1'>
+        <div className="text-goals1">
           <h2>{t("buildarGoals")}</h2>
           <p>{t("futurePlans")}</p>
         </div>
@@ -126,47 +132,78 @@ const SobreNos = () => {
           </div>
         </div>
       </section>
-      <img alt='' className='odsClasse' src={ods}></img>
+      <img alt="" className="odsClasse" src={ods}></img>
       <section className="OurTeam">
         <h2>{t("facesBehindBrand")}</h2>
         <div className="team-members">
           <div className="team-member 1">
             <img src={teamMember1} alt="Christian William" />
-            <p><strong>Christian William</strong><br />{t("fullstackDeveloper")}</p>
+            <p>
+              <strong>Christian William</strong>
+              <br />
+              {t("fullstackDeveloper")}
+            </p>
           </div>
           <div className="team-member">
             <img src={teamMember2} alt="Daniel Fernandes" />
-            <p><strong>Daniel Fernandes</strong><br />{t("productOwnerFullstack")}</p>
+            <p>
+              <strong>Daniel Fernandes</strong>
+              <br />
+              {t("productOwnerFullstack")}
+            </p>
           </div>
           <div className="team-member">
             <img src={teamMember3} alt="Erik Paulino" />
-            <p><strong>Erik Paulino</strong><br />{tFormatado("scrumMasterFrontend")}</p>
+            <p>
+              <strong>Erik Paulino</strong>
+              <br />
+              {tFormatado("scrumMasterFrontend")}
+            </p>
           </div>
           <div className="team-member">
             <img src={teamMember4} alt="Eduardo Gomes" />
-            <p><strong>Eduardo Gomes</strong><br />{tFormatado("backendDeveloper")}</p>
+            <p>
+              <strong>Eduardo Gomes</strong>
+              <br />
+              {tFormatado("backendDeveloper")}
+            </p>
           </div>
         </div>
-        <div className='team-members 2'>
+        <div className="team-members 2">
           <div className="team-member">
             <img src={teamMember5} alt="Isaque Barbosa" />
-            <p><strong>Isaque Barbosa</strong><br />{tFormatado("backendDeveloper")}</p>
+            <p>
+              <strong>Isaque Barbosa</strong>
+              <br />
+              {tFormatado("backendDeveloper")}
+            </p>
           </div>
           <div className="team-member">
             <img src={teamMember6} alt="Gretzel Penaloza" />
-            <p><strong>Gretzel Penaloza</strong><br />{t("fullstackDeveloper")}</p>
+            <p>
+              <strong>Gretzel Penaloza</strong>
+              <br />
+              {t("fullstackDeveloper")}
+            </p>
           </div>
           <div className="team-member">
             <img src={teamMember7} alt="Gustavo Bosak" />
-            <p><strong>Gustavo Bosak</strong><br />{tFormatado("financeFrontend")}</p>
+            <p>
+              <strong>Gustavo Bosak</strong>
+              <br />
+              {tFormatado("financeFrontend")}
+            </p>
           </div>
           <div className="team-member">
             <img src={teamMember8} alt="Letícia Nascimento" />
-            <p><strong>Letícia Nascimento</strong><br />{t("databaseAdministrator")}</p>
+            <p>
+              <strong>Letícia Nascimento</strong>
+              <br />
+              {t("databaseAdministrator")}
+            </p>
           </div>
         </div>
       </section>
-
 
       <Footer />
     </>

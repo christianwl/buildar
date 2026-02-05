@@ -1,6 +1,6 @@
 // Import de configuração
 // configuração de internacionalização (i18n)
-import "../config/i18n.jsx";
+import "@/config/i18n.jsx";
 
 // Imports de Hooks
 import { useState, useEffect } from "react";
