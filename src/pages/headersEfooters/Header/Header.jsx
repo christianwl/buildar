@@ -1,9 +1,11 @@
-import './Header.css';
 import { Link } from "react-router-dom";
 import { useState, useEffect } from 'react';
-import useControleDeTraducao from '../../../shared/useControleDeTraducao';
 
-import logo from '../images/logo_on.webp';
+import useControleDeTraducao from '@/shared/useControleDeTraducao';
+
+import logo from '@/assets/logo/logoOn.webp';
+
+import './Header.css';
 
 export default function Header() {
   const { t } = useControleDeTraducao();

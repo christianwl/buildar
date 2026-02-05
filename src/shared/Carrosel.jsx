@@ -1,6 +1,8 @@
-import "react-multi-carousel/lib/styles.css";
 import Carousel from "react-multi-carousel";
+
 import CustomDot from "./CustomDots";
+
+import "react-multi-carousel/lib/styles.css";
 
 export default function Carrosel(props){
     return(

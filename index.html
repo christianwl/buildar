@@ -1,15 +1,20 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#000000" />
+
+    <title>Buildar - Habilidades para moldar, futuro para conquistar</title>
+
     <meta
       name="description"
-      content="Web site para você por em prática suas softkills"
+      content="Desenvolva suas soft skills com a Buildar! Uma plataforma gamificada onde você aprende habilidades para o futuro, personaliza seu avatar e conta com a ajuda da nossa mascote Vivi. Conquiste o mercado de forma leve e divertida."
     />
-    <title>Buildar - Habilidades para moldar, futuro para conquistar</title>
+    <meta name="author" content="Projeto Buildar" />
+
+    <link rel="icon" href="/favicon.ico" />
+
+    <meta name="theme-color" content="#000000" />
   </head>
   <body>
     <!-- Limpa o console logo no início do carregamento -->
@@ -124,14 +129,14 @@ com tratamento para apenas funcionar em um servidor, evitando erros no console -
 
           s.onerror = function () {
             console.log(
-              "Erro ao carregar o Assistive script: não pôde ser acessado."
+              "Erro ao carregar o Assistive script: não pôde ser acessado.",
             );
           };
 
           h.appendChild(s);
         } else {
           console.log(
-            "Assistive script não será carregado no ambiente de desenvolvimento 'localHost'."
+            "Assistive script não será carregado no ambiente de desenvolvimento 'localHost'.",
           );
         }
       })();

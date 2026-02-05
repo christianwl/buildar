@@ -1,8 +1,11 @@
-import Footer from '../headersEfooters/footerPreLogin/Footer';
-import './Termos.css';
-// import HeaderHome from "../home/HeaderHome";
-import HeaderTermos from './components/headertermos';
 import { useTranslation } from 'react-i18next';
+
+import Footer from '../headersEfooters/footerPreLogin/Footer';
+import HeaderTermos from './components/headertermos';
+
+import './Termos.css';
+
+// import HeaderHome from "../home/HeaderHome";
 
 export default function Termos() {
     const { t } = useTranslation();

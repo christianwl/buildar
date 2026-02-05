@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
-import './Quiz.css';
-import HeaderHome from "../home/HeaderHome";
 import { useTranslation } from 'react-i18next';
 
+import HeaderHome from "../home/HeaderHome";
+
+import './Quiz.css';
 
 const InicioQuiz = () => {
   const { t } = useTranslation();

@@ -1,11 +1,13 @@
-import './banner.css';
-import Header from './HeaderHome.jsx';
-// import fundo from './images/image_fundo.webp';
-// import { Outlet, Link } from "react-router-dom";
-import Elevadores from "./Elevadores.jsx"
-import Footer from '../headersEfooters/footerPreLogin/Footer.jsx';
 import { useTranslation } from 'react-i18next';
 
+import Header from './HeaderHome';
+import Elevadores from "./Elevadores"
+import Footer from '../headersEfooters/footerPreLogin/Footer';
+
+import './banner.css';
+
+// import fundo from './images/image_fundo.webp';
+// import { Outlet, Link } from "react-router-dom";
 
 export default function Home() {
     const { t } = useTranslation();

@@ -1,4 +1,5 @@
 import { Link, Outlet, useLocation } from 'react-router-dom';
+
 import './headertermos.css';
 
 export default function HeaderTermos() {

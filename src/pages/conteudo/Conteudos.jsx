@@ -1,11 +1,14 @@
+import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+
 import PerfilDialogo from './PerfilDialogo';
 import Contexto from './Contexto';
-import Vivi from './imagem/vivi.png';
-import Perfil from './imagem/perfil.png';
-import { useState, useEffect } from 'react';
+
+import Vivi from './images/vivi.png';
+import Perfil from './images/perfil.png';
+import planilha from "./images/Planilha.png"
+
 import './Conteudos.css';
-import planilha from "./imagem/Planilha.png"
 
 const listaConteudos = [
     {

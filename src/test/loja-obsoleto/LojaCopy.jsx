@@ -1,12 +1,12 @@
-import './LojaCopy.css';
-
-import HeaderHome from '../home/HeaderHome';
-import Footer from '../headersEfooters/footerPreLogin/Footer';
+import HeaderHome from '../../pages/home/HeaderHome';
+import Footer from '../../pages/headersEfooters/footerPreLogin/Footer';
 
 import energyImage from './images/energia.png';
 import moneyImage from './images/builDollars.png';
 import plusImage from './images/fundo.png';
 import lojaImage from './images/vivi.png';
+
+import './LojaCopy.css';
 
 export default function LojaCopy() {
     return (

@@ -1,15 +1,20 @@
-import './Login.css';
 import { useState } from 'react';
 import { Link, Outlet, useNavigate } from 'react-router-dom'; // Importando Link e Outlet
+import { useTranslation } from 'react-i18next';
+import "@/config/i18n";
+
+import { setNomeUsuario } from '@/shared/useNomeUsuario';
+
+import Header from '../headersEfooters/Header/Header';
+
+import formaLogin1 from './images/formaLogin1.webp';
+
+import './Login.css';
+
 // import forma3 from './images/Vector-3.webp';
 // import forma from './images/Vector.webp';
 // import logo from './images/logo_on.webp';
 // import forma2 from './images/forma2.webp';
-import forma1 from './images/forma1.webp';
-import Header from '../headersEfooters/Header/Header';
-import { useTranslation } from 'react-i18next';
-import "../../config/i18n";
-import { setNomeUsuario } from '../../shared/useNomeUsuario';
 
 export default function Login() {
     const { t } = useTranslation();
@@ -32,7 +37,7 @@ export default function Login() {
 
     return (
         <main id="login">
-            <img src={forma1} alt="forma1" className='forma1' />
+            <img src={formaLogin1} alt="forma1" className='forma1' />
             <Header classe='loginHeader'/>
             <article>
                 <div className='caixa-esquerda'>

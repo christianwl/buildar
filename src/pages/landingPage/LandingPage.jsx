@@ -1,4 +1,4 @@
-import { TranslationProvider } from '../../shared/TranslationContext';
+import { TranslationProvider } from '@/shared/TranslationContext';
 
 import Header from '../headersEfooters/Header/Header';
 import PrimeiraTela from './components/Section1_Inicio/PrimeiraTela';

@@ -1,5 +1,7 @@
-import '../Perfil.css';
+import { useTranslation } from 'react-i18next';
+
 import ConquistaDetailed from './ConquistaDetailed';
+
 import achievImage0 from '../images/achievement_img0.png'
 import achievImage1 from '../images/achievement_img.png';
 import achievImage2 from '../images/achievement_img1.png';
@@ -7,9 +9,7 @@ import achievImage3 from '../images/achievement_img2.png';
 import achievImage4 from '../images/achievement_img3.png';
 import achievImageBuildar from '../images/achievement_img-Buildar.png';
 
-import { useTranslation } from 'react-i18next';
-
-
+import '../Perfil.css';
 
 export default function ConquistasDetails() {
     const { t } = useTranslation();

@@ -1,12 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
+import useControleDeTraducao from '@/shared/useControleDeTraducao';
+
 import HeaderHome from '../home/HeaderHome';
 import Footer from '../headersEfooters/footerPreLogin/Footer';
 import EventSearch from './EventSearch';
-import forma from '../conexoes/images/forma branca.webp';
-import Forma2 from './images/amarelo lilas azul.webp';
-import imgFormulario from '../conexoes/images/imagem formulario.webp';
-import useControleDeTraducao from '../../shared/useControleDeTraducao';
+
+import bgFormasBrancas from './images/bgFormasBrancas.webp';
+import bgFormasColoridas from './images/bgFormasColoridas.webp';
+import bgFormulario from './images/bgFormulario.webp';
 
 import '../conexoes/Conexoes.css'; // Certifique-se de que este arquivo CSS está no caminho correto
 
@@ -16,7 +19,7 @@ export default function Conexoes() {
     return (
         <main id='Conexoes'>
             <div className="containerAmarelo">
-                <img src={forma} alt="forma" />
+                <img src={bgFormasBrancas} alt="forma" />
                 <h2>{t("liveStream")}</h2>
             </div>
             <HeaderHome/>
@@ -57,10 +60,10 @@ export default function Conexoes() {
                 <button>{t("historic")}</button>
             </div>
 
-            <img src={Forma2} alt="forma2" className="forma2" />
+            <img src={bgFormasColoridas} alt="forma2" className="forma2" />
 
             <div className="Seja-voluntario">
-                <img src={imgFormulario} alt="imgFormulario" className="imgFormulario" />
+                <img src={bgFormulario} alt="imgFormulario" className="imgFormulario" />
                 <div className="textoVoluntario">
                     <h3>{tFormatado("becomeSpeaker")}</h3>
                     <p>{t("workExperiences")}</p>

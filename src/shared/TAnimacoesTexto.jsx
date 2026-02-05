@@ -1,6 +1,7 @@
 // TAnimacoesTexto.js
 import React from 'react';
-import { useTranslation } from 'react-i18next';  // Importa o hook de tradução
+import { useTranslation } from 'react-i18next'; 
+ // Importa o hook de tradução
 import './TAnimacoesTexto.css'; // Estilos para animações
 
 const TAnimacoesTexto = ({ tKey, anim , qntd}) => {

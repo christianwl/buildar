@@ -1,4 +1,10 @@
-import "./Perfil.css";
+import { useState } from "react";
+import Modal from "react-modal";
+
+import { getNomeUsuario } from "@/shared/useNomeUsuario";
+
+import useControleDeTraducao from "@/shared/useControleDeTraducao";
+
 import HeaderHome from "../home/HeaderHome";
 import Conquistas from './components/Conquistas';
 import Skins from './components/Skins';
@@ -11,17 +17,12 @@ import pen from './images/pen.png';
 import settingsGear from './images/settings.png';
 import closeButton from './images/closeButton.png';
 
-import {getNomeUsuario} from "../../shared/useNomeUsuario";
+import "./Perfil.css";
 
 // import playerV2 from "../corredor/images/personagens/pessoa/personagem_Rogerio.png";
 // import playerV3 from "../corredor/images/personagens/pessoa/personagem_Malu.png";
 // import playerV4 from "../corredor/images/personagens/pessoa/personagem_Tobias.png";
 
-import { useState } from "react";
-
-import useControleDeTraducao from "../../shared/useControleDeTraducao";
-
-import Modal from "react-modal";
 Modal.setAppElement('#root');
 
 const tipoPlano = (tipo) => {

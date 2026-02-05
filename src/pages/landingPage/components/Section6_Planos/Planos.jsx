@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 
-import useControleDeTraducao from '../../../../shared/useControleDeTraducao';
+import useControleDeTraducao from '@/shared/useControleDeTraducao';
 
-import TPrecos from '../../../../shared/TPrecos';
+import TPrecos from '@/shared/TPrecos';
 
 import event from '../../images/ticket.webp';
 import addBlock from '../../images/add_block.webp';

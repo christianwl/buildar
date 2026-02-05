@@ -1,11 +1,13 @@
+import { tParaDialogos } from './tParaDialogos';
+
 import ConfiguracaoMapaGame from './ConfiguracaoMapaGame';
 import DirectionInput from './DirectionInput';
 import Mapas from './Mapas';
 import KeyPressListener from './KeyPressListener';
-// import useControleDeTraducao from '../../../shared/useControleDeTraducao';
-import utils from './Utils';
-import { tParaDialogos } from './tParaDialogos';
 
+import utils from './Utils';
+
+// import useControleDeTraducao from '@/shared/useControleDeTraducao';
 
 export default class Game {
     constructor(config) {

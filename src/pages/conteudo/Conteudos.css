@@ -120,28 +120,28 @@
 }
 
 .classebg1{
-    background-image: url('./imagem/bgPlanilha.png');
+    background-image: url('./images/bgPlanilha.png');
     background-size: auto;
     background-position: center;
 
 }
 
 .classebg2{
-    background-image: url('./imagem/bgGestaoDeTempo.png');
+    background-image: url('./images/bgGestaoDeTempo.png');
     background-size: 60%;
     background-position: center;
 
 }
 
 .classebg3{
-    background-image: url('./imagem/bgEscritorio.png');
+    background-image: url('./images/bgEscritorio.png');
     background-size: 50%;
     background-position: center;
 
 }
 
 .classebg4{
-    background-image: url('./imagem/bgLugar.png');
+    background-image: url('./images/bgLugar.png');
     background-size: contain;
     background-color: #E9D7C9;
     background-position: center;

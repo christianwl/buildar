@@ -1,7 +1,9 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { useDrop } from 'react-dnd';
-import DraggableItem from './DraggableItem'; 
+
 import { ItemContext } from './Itens'; 
+
+import DraggableItem from './DraggableItem'; 
 
 const DroppableArea = ({ id, className }) => {
   const { items, handleDrop } = useContext(ItemContext);

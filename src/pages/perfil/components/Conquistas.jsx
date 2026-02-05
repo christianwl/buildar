@@ -1,11 +1,13 @@
-import '../Perfil.css';
 import Conquista from './Conquista';
+
 import achievPic0 from '../images/achievement_img0.png'
 import achievPic1 from '../images/achievement_img.png';
 import achievPic2 from '../images/achievement_img1.png';
 import achievPic3 from '../images/achievement_img2.png';
 import achievPic4 from '../images/achievement_img3.png';
 import achievPicBuildar from '../images/achievement_img-Buildar.png';
+
+import '../Perfil.css';
 
 
 const achievData = [

@@ -1,6 +1,6 @@
-import { TranslationTagsComPrefixo as TComTag } from '../../../../shared/TranslationTagsComPrefixo';
+import { TranslationTagsComPrefixo as TComTag } from '@/shared/TranslationTagsComPrefixo';
 
-import useControleDeTraducao from '../../../../shared/useControleDeTraducao';
+import useControleDeTraducao from '@/shared/useControleDeTraducao';
 
 import Planos from './Planos';
 

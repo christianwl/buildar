@@ -1,11 +1,17 @@
 import { Link } from 'react-router-dom';
-import './Conteudo6.css';
-import Vivi from './imagem/vivi.png';
-import DroppableArea from './DroppableArea';
-import { ItemProvider } from './Itens'; 
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
+
+import { ItemProvider } from './Itens'; 
+
+import DroppableArea from './DroppableArea';
+
+import Vivi from './images/vivi.png';
+
+import './Conteudo6.css';
+
 // import { useEffect } from 'react';
+
 
 // const listaHorarios = ['9h', '10h', '11h', '12h', '13h', '14h', '15h']
 
