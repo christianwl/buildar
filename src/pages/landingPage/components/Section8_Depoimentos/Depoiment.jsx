@@ -1,4 +1,4 @@
-import useControleDeTraducao from '../../../../shared/useControleDeTraducao';
+import useControleDeTraducao from '@/shared/useControleDeTraducao';
 
 import './OitavaTela.css';
 

@@ -1,17 +1,20 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-// import { ItemContext } from './Itens';
-import Vivi from './imagem/vivi.png';
-// import Tela4 from './imagem/Tela4.jpg';
-import './Conteudo7.css';
-import email from './imagem/Email.png';
-import reniao from './imagem/Reunião-removebg-preview.png';
-// import reniao2 from './imagem/equipe-removebg-preview.png';
-import organizaçao from './imagem/Organizaçao.png';
-import almoço from './imagem/Almoço.png'
+
 import DroppableArea from './DroppableArea';
 
+import Vivi from './images/vivi.png';
+import organizaçao from './images/Organizaçao.png';
+import email from './images/Email.png';
+import reniao from './images/Reunião-removebg-preview.png';
+import almoço from './images/Almoço.png'
 
+import './Conteudo7.css';
+
+// import { ItemContext } from './Itens';
+
+// import Tela4 from './imagem/Tela4.jpg';
+// import reniao2 from './imagem/equipe-removebg-preview.png';
 
 export default function Conteudo() {
   // const { items, handleDrop } = useContext(ItemContext);

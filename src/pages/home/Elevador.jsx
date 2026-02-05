@@ -1,5 +1,6 @@
-import "./elevador.css"
 import { Link } from "react-router-dom";
+
+import "./elevador.css"
 
 export default function Elevador(props) {
     return (

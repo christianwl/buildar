@@ -13,7 +13,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LandingPage from '../pages/landingPage/LandingPage.jsx';
 import Login from '../pages/entrada/Login.jsx';
 import Cadastro from '../pages/entrada/Cadastro.jsx';
-import SobreNosTentativa from '../pages/sobreTentativa/SobreNos.jsx';
+import SobreNos from '../pages/sobre/SobreNos.jsx';
 import FaleConosco from '../pages/faleConosco/FaleConosco.jsx';
 import Termos from '../pages/termos/Termos.jsx';
 
@@ -62,7 +62,7 @@ export default function Rotas() {
         },
         {
             path: "sobre",
-            element: < SobreNosTentativa />
+            element: < SobreNos />
         },
         {
             path: "faleConosco",

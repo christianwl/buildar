@@ -1,6 +1,6 @@
 import Carousel from "react-multi-carousel";
 
-import useControleDeTraducao from '../../../../shared/useControleDeTraducao';
+import useControleDeTraducao from '@/shared/useControleDeTraducao';
 
 import Depoiment from './Depoiment';
 import CustomArrow from './CustomArrow';

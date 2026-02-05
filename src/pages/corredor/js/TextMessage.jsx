@@ -1,9 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
-import KeyPressListener from './KeyPressListener';
-import './textMessage.css'
-import useControleDeTraducao from '../../../shared/useControleDeTraducao';
-import { TranslationTagsComPrefixo as TComTag } from '../../../shared/TranslationTagsComPrefixo';
+
+import useControleDeTraducao from '@/shared/useControleDeTraducao';
 import { useParams } from "react-router-dom";
+
+import { TranslationTagsComPrefixo as TComTag } from '@/shared/TranslationTagsComPrefixo';
+
+import KeyPressListener from './KeyPressListener';
+
+import './textMessage.css'
 
 function TextMessage({ text, onComplete, nome }) {
     const { mapaNome } = useParams();

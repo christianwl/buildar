@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
 
-import useControleDeTraducao from '../../../shared/useControleDeTraducao';
+import useControleDeTraducao from '@/shared/useControleDeTraducao';
 
-import logo from '../images/logo_off.webp';
-import instagram from '../images/social_instagram.webp';
-import tiktok from '../images/social_tiktok.webp';
-import linkedin from '../images/social_linkedin.webp';
-import github from '../images/social_github.webp';
+import logoOff from '../images/logoOff.webp';
+import socialInstagram from '../images/socialInstagram.webp';
+import socialTiktok from '../images/socialTiktok.webp';
+import socialLinkedin from '../images/socialLinkedin.webp';
+import socialGithub from '../images/socialGithub.webp';
 
 import './Footer.css';
 
@@ -31,7 +31,7 @@ export default function FooterPreLogin() {
           </ul>
         </nav>
         <figure>
-          <Link to={a === 1 ? "/" : "/home"}><img src={logo} className="logo" alt="Logo" /></Link>
+          <Link to={a === 1 ? "/" : "/home"}><img src={logoOff} className="logo" alt="Logo" /></Link>
           <p>{t(chaveComPrefixo("direitos"))}</p>
         </figure>
       </section>
@@ -44,16 +44,16 @@ export default function FooterPreLogin() {
         </nav>
         <nav className="social">
           <a href="https://www.instagram.com/buildar_demoday/" target="_blank" rel="noreferrer">
-            <img src={instagram} alt="Instagram" />
+            <img src={socialInstagram} alt="Instagram" />
           </a>
           <a href="https://www.tiktok.com/@projeto_buildar" target="_blank" rel="noreferrer">
-            <img src={tiktok} alt="TikTok" />
+            <img src={socialTiktok} alt="TikTok" />
           </a>
           <a href="https://www.linkedin.com/company/buildaroficial/" target="_blank" rel="noreferrer">
-            <img src={linkedin} alt="LinkedIn" />
+            <img src={socialLinkedin} alt="LinkedIn" />
           </a>
           <a href="https://github.com/projeto-buildar" target="_blank" rel="noreferrer">
-            <img src={github} alt="GitHub" />
+            <img src={socialGithub} alt="GitHub" />
           </a>
         </nav>
       </section>

@@ -1,13 +1,13 @@
-import useControleDeTraducao from '../../../../shared/useControleDeTraducao';
+import useControleDeTraducao from '@/shared/useControleDeTraducao';
 
 // import Carousel from "react-multi-carousel";
-import Carrosel from "../../../../shared/Carrosel"
+import Carrosel from "@/shared/Carrosel"
 
-import { TranslationTagsComPrefixo as TComTag } from '../../../../shared/TranslationTagsComPrefixo';
+import { TranslationTagsComPrefixo as TComTag } from '@/shared/TranslationTagsComPrefixo';
 
-import Avatar1 from '../../images/Rogerio_avatar.png';
-import Avatar2 from '../../images/Malu_avatar.png';
-import Avatar3 from '../../images/Tobias_avatar.png';
+import Avatar1 from '@/assets/avatar/Rogerio_avatar.png';
+import Avatar2 from '@/assets/avatar/Malu_avatar.png';
+import Avatar3 from '@/assets/avatar/Tobias_avatar.png';
 
 import "react-multi-carousel/lib/styles.css";
 import './TerceiraTela.css';

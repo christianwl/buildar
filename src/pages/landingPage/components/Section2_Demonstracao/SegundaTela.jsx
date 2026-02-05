@@ -1,7 +1,9 @@
-import './SegundaTela.css';
+import useControleDeTraducao from '@/shared/useControleDeTraducao';
+import { TranslationTagsComPrefixo as TComTag } from '@/shared/TranslationTagsComPrefixo';  // Assumindo que TransComPrefixo está exportado
+
 import gif from '../../images/buildar_hall.gif'
-import useControleDeTraducao from '../../../../shared/useControleDeTraducao';
-import { TranslationTagsComPrefixo as TComTag } from '../../../../shared/TranslationTagsComPrefixo';  // Assumindo que TransComPrefixo está exportado
+
+import './SegundaTela.css';
 
 export default function SegundaTela() {
   const { chaveComPrefixo } = useControleDeTraducao("section2");

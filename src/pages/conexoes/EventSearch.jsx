@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+
 import './EventSearch.css'; // Importe o arquivo CSS
 
 function EventSearch() {

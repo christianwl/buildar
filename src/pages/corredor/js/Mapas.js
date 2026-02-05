@@ -1,3 +1,6 @@
+import { getNomeUsuario } from '@/shared/useNomeUsuario';
+import { tParaDialogos } from './tParaDialogos';
+
 import utils from './Utils'; // Importa o módulo Utils que contém funções utilitárias
 import Person from './Person'; // Importa a classe Person usada para criar personagens
 import GameObject from './GameObject';
@@ -6,7 +9,6 @@ import GameObject from './GameObject';
 import demoRoomLower from "../images/mapas/mapaExtenso_lower.png";
 import demoRoomUpper from "../images/mapas/mapaExtenso_upper.png";
 
-// import npc1 from "../images/personagens/pessoa/npc1.png";
 import playerV2 from "../images/personagens/pessoa/personagem_Rogerio.png";
 import playerV3 from "../images/personagens/pessoa/personagem_Malu.png";
 import playerV4 from "../images/personagens/pessoa/personagem_Tobias.png";
@@ -20,10 +22,9 @@ import Jaja from "../images/personagens/pessoa/Jaja.png";
 
 import Elevador from '../images/mapas/elevador.png'
 
-import { getNomeUsuario } from '../../../shared/useNomeUsuario';
-import { tParaDialogos } from './tParaDialogos';
+// import useControleDeTraducao from '@/shared/useControleDeTraducao';
 
-// import useControleDeTraducao from '../../../shared/useControleDeTraducao';
+// import npc1 from "../images/personagens/pessoa/npc1.png";
 
 // Mapeia os avatares ao ID
 const avatarMap = {

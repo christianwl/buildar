@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import './Quiz.css';
-import HeaderHome from "../home/HeaderHome";
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom'; // Importe o Link do react-router-dom
-import "../../config/i18n";
+import "@/config/i18n";
 
-// Função para embaralhar o array
+import HeaderHome from "../home/HeaderHome";
+
+import './Quiz.css';
+
 // Função para embaralhar o array
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {

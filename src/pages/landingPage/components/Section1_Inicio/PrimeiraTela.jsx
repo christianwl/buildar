@@ -1,6 +1,6 @@
 import { Outlet, Link } from "react-router-dom";
 
-import useControleDeTraducao from '../../../../shared/useControleDeTraducao';
+import useControleDeTraducao from '@/shared/useControleDeTraducao';
 
 import image from '../../images/primeiraTela_img.webp';
 

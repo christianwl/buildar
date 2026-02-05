@@ -1,11 +1,13 @@
+import { Link } from 'react-router-dom';
+
+import useControleDeTraducao from '@/shared/useControleDeTraducao';
+
 import HeaderHome from '../home/HeaderHome';
 import Footer from '../headersEfooters/footerPreLogin/Footer';
+
 import './AreaDescanso.css';
 
 // import gamePic from './images/image_filler_square.png';
-
-import { Link } from 'react-router-dom';
-import useControleDeTraducao from '../../shared/useControleDeTraducao';
 
 export default function AreaDescanso() {
     const { t, tFormatado } = useControleDeTraducao();

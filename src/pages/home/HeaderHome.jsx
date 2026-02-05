@@ -1,9 +1,12 @@
-import './headerHome.css'
-import logo from './images/logo_on.webp';
-import BtnsNav from './BtnsNav';
 import { Outlet, Link } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
-import "../../config/i18n";
+import "@/config/i18n";
+
+import BtnsNav from './BtnsNav';
+
+import logo from '@/assets/logo/logoOn.webp';
+
+import './headerHome.css'
 
 export default function HeaderHome() {
   const { t } = useTranslation();

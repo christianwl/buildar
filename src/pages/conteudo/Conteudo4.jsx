@@ -1,9 +1,10 @@
 import { Link, useNavigate } from 'react-router-dom';
-// import './Conteudo.css';
-import Vivi from './imagem/vivi.png';
-import Tela1 from './imagem/Tela1.jpg';
-import Perfil from './imagem/perfil.png'
 
+import Vivi from './images/vivi.png';
+import Tela1 from './images/Tela1.jpg';
+import Perfil from './images/perfil.png'
+
+// import './Conteudo.css';
 
 export default function Conteudo() {
   const history = useNavigate();

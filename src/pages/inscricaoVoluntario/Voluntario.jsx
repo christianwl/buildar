@@ -1,11 +1,16 @@
 import React from 'react';
+
 import HeaderHome from '../home/HeaderHome';
-import './Voluntario.css';
-// import { Link } from 'react-router-dom';
 import useTypewriter from './useTypewriter';
 import LoginVoluntario from './cadastroVoluntario';
-// import Footer from '../headersEfooters/footerPreLogin/Footer';
+
 import bottom_back from './images/bottom_back.png';
+
+import './Voluntario.css';
+
+// import { Link } from 'react-router-dom';
+
+// import Footer from '../headersEfooters/footerPreLogin/Footer';
 
 const Voluntario = () => {
     useTypewriter('animated-title', "Seja um(a) Voluntário(a)", 100, 2000, 1000);

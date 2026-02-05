@@ -1,6 +1,12 @@
-import './Loja.css';
+import Carousel from "react-multi-carousel";
+
+import useControleDeTraducao from '@/shared/useControleDeTraducao';
+
+import CustomArrow from '../landingPage/components/Section8_Depoimentos/CustomArrow';
+
 import HeaderHome from '../home/HeaderHome';
 import Footer from '../headersEfooters/footerPreLogin/Footer';
+
 import skin1 from './images/skin.png';
 import skin2 from './images/skin2.png';
 import skin3 from './images/skin3.png';
@@ -10,11 +16,9 @@ import vivi from './images/vivi.png';
 import fundoroxo from './images/fundoroxo.png';
 import barra from './images/barra.png';
 import maisbuildolars from './images/maisbuildolars.png';
-import Carousel from "react-multi-carousel";
-import CustomArrow from '../landingPage/components/Section8_Depoimentos/CustomArrow';
 import listras from './images/listras.png';
-import useControleDeTraducao from '../../shared/useControleDeTraducao';
 
+import './Loja.css';
 
 const Loja = () => {
   const { t, tFormatado } = useControleDeTraducao();

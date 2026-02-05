@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom';
+
+
+import Vivi from './images/vivi.png';
+import Perfil from './images/perfil.png'
+
 // import './Conteudo1.css';
-import Vivi from './imagem/vivi.png';
-import Perfil from './imagem/perfil.png'
 
 export default function Conteudo() {
   // const history = useNavigate();

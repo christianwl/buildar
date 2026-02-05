@@ -52,12 +52,12 @@
 #trexGame {
     background: #FFFFFF;
     & span {
-        background: url('./images/buildar_runGame.gif') left 0 top 0/cover no-repeat;
+        background: url('./images/animRunGame.gif') left 0 top 0/cover no-repeat;
     }
 }
 
 #quizGame span{
-    background: url('./images/Negocio legal.gif') center /93% no-repeat;
+    background: url('./images/animQuizGame.gif') center /93% no-repeat;
     background-color: #ffff;
 } 
 
