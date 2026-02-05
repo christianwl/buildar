@@ -8,7 +8,7 @@
 }
 
 .elevador {
-    background: url('./images/Elevador.svg') no-repeat;
+    background: url('./img/elevator.svg') no-repeat;
     background-size: 100%;
     width: 300px;
     height: 350px;
@@ -40,5 +40,5 @@
 }
 
 .elevador.emBreve{
-    background: url('./images/elevadorNulo.webp') no-repeat;
+    background: url('./img/elevator-null.webp') no-repeat;
 }

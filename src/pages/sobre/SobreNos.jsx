@@ -7,7 +7,7 @@ import { useEffect } from "react";
 import useControleDeTraducao from "@/shared/useControleDeTraducao";
 
 // Imports de Components
-import HeaderHome from "../home/HeaderHome";
+import HeaderHome from "../Home/components/HeaderHome";
 import Footer from "@/components/layout/Footer";
 
 import mascot from "./images/mascot.png";

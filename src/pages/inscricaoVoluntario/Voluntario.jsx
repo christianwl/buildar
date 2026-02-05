@@ -1,6 +1,6 @@
 import React from "react";
 
-import HeaderHome from "../home/HeaderHome";
+import HeaderHome from "../Home/components/HeaderHome";
 import useTypewriter from "./useTypewriter";
 import LoginVoluntario from "./cadastroVoluntario";
 

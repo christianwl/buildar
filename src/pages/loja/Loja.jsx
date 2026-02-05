@@ -4,7 +4,7 @@ import useControleDeTraducao from "@/shared/useControleDeTraducao";
 
 import CustomArrow from "@/shared/CustomArrow";
 
-import HeaderHome from "../home/HeaderHome";
+import HeaderHome from "../Home/components/HeaderHome";
 import Footer from "@/components/layout/Footer";
 
 import skin1 from "./images/skin.png";

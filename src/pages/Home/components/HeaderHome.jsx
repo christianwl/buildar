@@ -6,7 +6,7 @@ import BtnsNav from './BtnsNav';
 
 import logoOn from '@/assets/logo/logo-on.webp';
 
-import './headerHome.css'
+import './HeaderHome.css'
 
 export default function HeaderHome() {
   const { t } = useTranslation();

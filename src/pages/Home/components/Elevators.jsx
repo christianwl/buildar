@@ -3,11 +3,11 @@ import useControleDeTraducao from "@/shared/useControleDeTraducao";
 import Carousel from "react-multi-carousel";
 import CustomArrow from "@/shared/CustomArrow";
 
-import Elevador from "./Elevador";
+import Elevator from "./Elevator";
 
 import "react-multi-carousel/lib/styles.css";
 
-export default function Elevadores() {
+export default function Elevators() {
   const { t } = useControleDeTraducao();
 
   const corredores = [
@@ -99,7 +99,7 @@ export default function Elevadores() {
       >
         {corredores.map((obj, index) => {
           return (
-            <Elevador
+            <Elevator
               key={index}
               link={`/corredor/${obj.mapa}`}
               softSkill={obj.softSkill}

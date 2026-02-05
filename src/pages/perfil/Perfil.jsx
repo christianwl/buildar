@@ -5,7 +5,7 @@ import { getNomeUsuario } from "@/shared/useNomeUsuario";
 
 import useControleDeTraducao from "@/shared/useControleDeTraducao";
 
-import HeaderHome from "../home/HeaderHome";
+import HeaderHome from "../Home/components/HeaderHome";
 import Conquistas from "./components/Conquistas";
 import Skins from "./components/Skins";
 import ConquistasDetails from "./components/ConquistasDetails";

@@ -1,25 +1,25 @@
-import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
-import HeaderHome from "../home/HeaderHome";
+import HeaderHome from "../Home/components/HeaderHome";
 
-import './Quiz.css';
+import "./Quiz.css";
 
 const InicioQuiz = () => {
   const { t } = useTranslation();
 
   return (
-    <div className='conteudo'>
-      <main id='containerQuiz'>
-        <HeaderHome className="quizHeader"/>
-        <div id='TelaInicial-Quiz'>
-          <h2>{t('chooseYourQuiz')}</h2>
-          <div className='containerQuiz'>
+    <div className="conteudo">
+      <main id="containerQuiz">
+        <HeaderHome className="quizHeader" />
+        <div id="TelaInicial-Quiz">
+          <h2>{t("chooseYourQuiz")}</h2>
+          <div className="containerQuiz">
             <Link to="/quiz1">
-              <button className="quiz1">{t('multipleChoice')}</button>
+              <button className="quiz1">{t("multipleChoice")}</button>
             </Link>
             <Link to="/quiz2">
-              <button className="quiz2">{t('trueOrFalse')}</button>
+              <button className="quiz2">{t("trueOrFalse")}</button>
             </Link>
           </div>
         </div>

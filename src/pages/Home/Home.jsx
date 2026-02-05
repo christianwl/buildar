@@ -1,10 +1,10 @@
 import { useTranslation } from "react-i18next";
 
-import Header from "./HeaderHome";
-import Elevadores from "./Elevadores";
+import HeaderHome from "./components/HeaderHome";
+import Elevators from "./components/Elevators";
 import Footer from "@/components/layout/Footer";
 
-import "./banner.css";
+import './Home.css';
 
 // import fundo from './images/image_fundo.webp';
 // import { Outlet, Link } from "react-router-dom";
@@ -14,12 +14,12 @@ export default function Home() {
 
   return (
     <div className="home">
-      <Header />
+      <HeaderHome />
       <main>
         <section className="titleTopFrame">
           <h1>{t("chooseFlor")}</h1>
         </section>
-        <Elevadores />
+        <Elevators />
       </main>
       <Footer />
 

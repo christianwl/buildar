@@ -18,7 +18,7 @@ import FaleConosco from "../pages/faleConosco/FaleConosco";
 import Termos from "../pages/termos/Termos";
 
 // Components acessiveis do Home
-import Home from "../pages/home/Home";
+import Home from "../pages/Home/Home";
 import Corredor from "../pages/corredor/Corredor";
 import Pratica from "../pages/conteudo/Pratica";
 import Conteudos from "../pages/conteudo/Conteudos";

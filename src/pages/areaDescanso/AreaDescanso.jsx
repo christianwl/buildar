@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 import useControleDeTraducao from "@/shared/useControleDeTraducao";
 
-import HeaderHome from "../home/HeaderHome";
+import HeaderHome from "../Home/components/HeaderHome";
 import Footer from "@/components/layout/Footer";
 
 import "./AreaDescanso.css";

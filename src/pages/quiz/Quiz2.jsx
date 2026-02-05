@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom'; // Importe o Link do react-router-dom
+import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom"; // Importe o Link do react-router-dom
 import "@/config/i18n";
 
-import HeaderHome from "../home/HeaderHome";
+import HeaderHome from "../Home/components/HeaderHome";
 
-import './Quiz.css';
+import "./Quiz.css";
 
 // Função para embaralhar o array
 function shuffleArray(array) {
@@ -20,83 +20,83 @@ function Quiz() {
 
   const questions = [
     {
-      questionText: t('procrastinationGoodStrategy'),
+      questionText: t("procrastinationGoodStrategy"),
       answerOptions: [
-        { answerText: `${t("true")}`, isCorrect: false, color: '#9B33FD' },
-        { answerText: t('false'), isCorrect: true, color: '#FF486D' },
+        { answerText: `${t("true")}`, isCorrect: false, color: "#9B33FD" },
+        { answerText: t("false"), isCorrect: true, color: "#FF486D" },
       ],
     },
     {
-      questionText: t('planDayNightBefore'),
+      questionText: t("planDayNightBefore"),
       answerOptions: [
-        { answerText: t('true'), isCorrect: true, color: '#9B33FD' },
-        { answerText: t('false'), isCorrect: false, color: '#FF486D' },
+        { answerText: t("true"), isCorrect: true, color: "#9B33FD" },
+        { answerText: t("false"), isCorrect: false, color: "#FF486D" },
       ],
     },
     // ...
     {
-      questionText: t('multitaskingIncreasesEfficiency'),
+      questionText: t("multitaskingIncreasesEfficiency"),
       answerOptions: [
-        { answerText: t('false'), isCorrect: true, color: '#FF486D' },
-        { answerText: t('true'), isCorrect: false, color: '#9B33FD' },
+        { answerText: t("false"), isCorrect: true, color: "#FF486D" },
+        { answerText: t("true"), isCorrect: false, color: "#9B33FD" },
       ],
     },
     {
-      questionText: t('settingRealisticDeadlines'),
+      questionText: t("settingRealisticDeadlines"),
       answerOptions: [
-        { answerText: t('true'), isCorrect: true, color: '#FF486D' },
-        { answerText: t('false'), isCorrect: false, color: '#FFB412' },
+        { answerText: t("true"), isCorrect: true, color: "#FF486D" },
+        { answerText: t("false"), isCorrect: false, color: "#FFB412" },
       ],
     },
     {
-      questionText: t('breaksDuringDayEssential'),
+      questionText: t("breaksDuringDayEssential"),
       answerOptions: [
-        { answerText: t('true'), isCorrect: true, color: '#FFB412' },
-        { answerText: t('false'), isCorrect: false, color: '#9B33FD' },
+        { answerText: t("true"), isCorrect: true, color: "#FFB412" },
+        { answerText: t("false"), isCorrect: false, color: "#9B33FD" },
       ],
     },
     {
-      questionText: t('workingMoreHours'),
+      questionText: t("workingMoreHours"),
       answerOptions: [
-        { answerText: t('true'), isCorrect: false, color: '#FFB412' },
-        { answerText: t('false'), isCorrect: true, color: '#FF486D' },
+        { answerText: t("true"), isCorrect: false, color: "#FFB412" },
+        { answerText: t("false"), isCorrect: true, color: "#FF486D" },
       ],
     },
     {
-      questionText: t('creativityOnlyForArtisticJobs'),
+      questionText: t("creativityOnlyForArtisticJobs"),
       answerOptions: [
-        { answerText: t('false'), isCorrect: true, color: '#9B33FD' },
-        { answerText: t('true'), isCorrect: false, color: '#FFB412' },
+        { answerText: t("false"), isCorrect: true, color: "#9B33FD" },
+        { answerText: t("true"), isCorrect: false, color: "#FFB412" },
       ],
     },
     {
-      questionText: t('empathyImportantInLeadership'),
+      questionText: t("empathyImportantInLeadership"),
       answerOptions: [
-        { answerText: t('false'), isCorrect: false, color: '#FFB412' },
-        { answerText: t('true'), isCorrect: true, color: '#FF486D' },
+        { answerText: t("false"), isCorrect: false, color: "#FFB412" },
+        { answerText: t("true"), isCorrect: true, color: "#FF486D" },
       ],
     },
     {
-      questionText: t('nonVerbalCommunication'),
+      questionText: t("nonVerbalCommunication"),
       answerOptions: [
-        { answerText: t('false'), isCorrect: true, color: '#9B33FD' },
-        { answerText: t('true'), isCorrect: false, color: '#FFB412' },
+        { answerText: t("false"), isCorrect: true, color: "#9B33FD" },
+        { answerText: t("true"), isCorrect: false, color: "#FFB412" },
       ],
     },
     {
-      questionText: t('dailyReadingBeneficial'),
+      questionText: t("dailyReadingBeneficial"),
       answerOptions: [
-        { answerText: t('false'), isCorrect: true, color: '#FFB412' },
-        { answerText: t('true'), isCorrect: false, color: '#FF486D' },
+        { answerText: t("false"), isCorrect: true, color: "#FFB412" },
+        { answerText: t("true"), isCorrect: false, color: "#FF486D" },
       ],
     },
     {
-      questionText: t('emotionalIntelligenceImpact'),
+      questionText: t("emotionalIntelligenceImpact"),
       answerOptions: [
-        { answerText: t('false'), isCorrect: false, color: '#9B33FD' },
-        { answerText: t('true'), isCorrect: true, color: '#FFB412' },
+        { answerText: t("false"), isCorrect: false, color: "#9B33FD" },
+        { answerText: t("true"), isCorrect: true, color: "#FFB412" },
       ],
-    }
+    },
   ];
 
   // Embaralha as perguntas antes de iniciar o jogo
@@ -129,49 +129,63 @@ function Quiz() {
   };
 
   return (
-    <main id='containerQuiz'>
-      <HeaderHome className="quizHeader"/>
+    <main id="containerQuiz">
+      <HeaderHome className="quizHeader" />
       <div className="quiz">
-      {showScore ? (
-        <div className="score-section">
-        {score >= 4 ? (
-          <p>{t('excellentScore1')} {score} {t('excellentScore2')}</p>
-        ) : score >= 1 ? (
-          <p>{t('almostScore1')} {score} {t('almostScore2')}</p>
-        ) : (
-          <p>{t('lowScore')}</p>
-        )}
-        <button onClick={restartQuiz} className="restart-button">{t('restart')}</button>
-        <Link to="/quiz">
-              <button className="back-button">{t('backToHome')}</button>
+        {showScore ? (
+          <div className="score-section">
+            {score >= 4 ? (
+              <p>
+                {t("excellentScore1")} {score} {t("excellentScore2")}
+              </p>
+            ) : score >= 1 ? (
+              <p>
+                {t("almostScore1")} {score} {t("almostScore2")}
+              </p>
+            ) : (
+              <p>{t("lowScore")}</p>
+            )}
+            <button onClick={restartQuiz} className="restart-button">
+              {t("restart")}
+            </button>
+            <Link to="/quiz">
+              <button className="back-button">{t("backToHome")}</button>
             </Link>
+          </div>
+        ) : (
+          <>
+            <div className="question-section">
+              <div className="question-count">
+                <span>
+                  {t("question")} {currentQuestion + 1}
+                </span>
+                /5
+              </div>
+              <div className="question-text">
+                {questions[currentQuestion]?.questionText}
+              </div>
+            </div>
+            <div className="answer-section">
+              <div className="answer-options">
+                {questions[currentQuestion].answerOptions.map(
+                  (answerOption, index) => (
+                    <button
+                      key={index}
+                      onClick={() =>
+                        handleAnswerOptionClick(answerOption.isCorrect)
+                      }
+                      style={{ backgroundColor: answerOption.color }}
+                    >
+                      {answerOption.answerText}
+                    </button>
+                  ),
+                )}
+              </div>
+            </div>
+          </>
+        )}
       </div>
-      
-      ) : (
-        <>
-          <div className="question-section">
-            <div className="question-count">
-              <span>{t('question')} {currentQuestion + 1}</span>/5
-            </div>
-            <div className="question-text">{questions[currentQuestion]?.questionText}</div>
-          </div>
-          <div className="answer-section">
-            <div className="answer-options">
-              {questions[currentQuestion].answerOptions.map((answerOption, index) => (
-                <button
-                  key={index}
-                  onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}
-                  style={{ backgroundColor: answerOption.color }}
-                >
-                  {answerOption.answerText}
-                </button>
-              ))}
-            </div>
-          </div>
-        </>
-      )}
-    </div>
-  </main>
+    </main>
   );
 }
 
