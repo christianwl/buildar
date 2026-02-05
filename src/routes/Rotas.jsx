@@ -11,8 +11,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // Components acessiveis da landingPage
 import LandingPage from "../pages/LandingPage/LandingPage";
-import Login from "../pages/entrada/Login";
-import Cadastro from "../pages/entrada/Cadastro";
+import Login from "../pages/entrada/Login/Login";
+import Cadastro from "../pages/entrada/Cadastro/Cadastro";
 import SobreNos from "../pages/sobre/SobreNos";
 import FaleConosco from "../pages/faleConosco/FaleConosco";
 import Termos from "../pages/termos/Termos";

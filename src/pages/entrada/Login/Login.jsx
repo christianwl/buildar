@@ -7,7 +7,7 @@ import { setNomeUsuario } from "@/shared/useNomeUsuario";
 
 import Header from "@/components/layout/Header";
 
-import formaLogin1 from "./images/formaLogin1.webp";
+import shapeBg1 from "./img/shape-bg-1.webp";
 
 import "./Login.css";
 
@@ -37,7 +37,7 @@ export default function Login() {
 
   return (
     <main id="login">
-      <img src={formaLogin1} alt="forma1" className="forma1" />
+      <img src={shapeBg1} alt="forma1" className="forma1" />
       <Header classe="loginHeader" />
       <article>
         <div className="caixa-esquerda">

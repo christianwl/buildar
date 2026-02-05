@@ -7,8 +7,8 @@ import { setNomeUsuario } from "@/shared/useNomeUsuario";
 
 import Header from "@/components/layout/Header";
 
-import formaCadastro1 from "./images/formaCadastro1.webp";
-import formaCadastro2 from "./images/formaCadastro2.webp";
+import shapeBg1 from "./img/shape-bg-1.webp";
+import shapeBg2 from "./img/shape-bg-2.webp";
 
 import "./Cadastro.css";
 
@@ -73,13 +73,13 @@ export default function Cadastro() {
   return (
     <main id="Cadastro">
       <img
-        src={formaCadastro1}
+        src={shapeBg1}
         alt="formaCadastro1"
         className="formaCadastro1"
       />
       <Header classe="cadastroHeader" />
       <img
-        src={formaCadastro2}
+        src={shapeBg2}
         alt="formaCadastro2"
         className="formaCadastro2"
       />
