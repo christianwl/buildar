@@ -26,7 +26,7 @@ import Conteudo6 from "../pages/conteudo/Conteudo6";
 import Conteudo7 from "../pages/conteudo/Conteudo7";
 
 // Components acessiveis de Conexoes
-import Conexoes from "../pages/conexoes/Conexoes";
+import Conexoes from "../pages/Conexoes/Conexoes";
 import Voluntario from "../pages/inscricaoVoluntario/Voluntario";
 
 // Components acessiveis da Loja

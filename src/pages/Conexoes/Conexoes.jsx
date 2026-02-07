@@ -7,11 +7,11 @@ import HeaderHome from "../Home/components/HeaderHome";
 import Footer from "@/components/layout/Footer";
 import EventSearch from "./EventSearch";
 
-import bgFormasBrancas from "./images/bgFormasBrancas.webp";
-import bgFormasColoridas from "./images/bgFormasColoridas.webp";
-import bgFormulario from "./images/bgFormulario.webp";
+import bgShapeWhite from "./img/bg-shape-white.webp";
+import bgShapeColorful from "./img/bg-shape-colorful.webp";
+import bgForm from "./img/bg-form.webp";
 
-import "../conexoes/Conexoes.css"; // Certifique-se de que este arquivo CSS está no caminho correto
+import "./Conexoes.css"; // Certifique-se de que este arquivo CSS está no caminho correto
 
 export default function Conexoes() {
   const { t, tFormatado } = useControleDeTraducao();
@@ -19,7 +19,7 @@ export default function Conexoes() {
   return (
     <main id="Conexoes">
       <div className="containerAmarelo">
-        <img src={bgFormasBrancas} alt="forma" />
+        <img src={bgShapeWhite} alt="forma" />
         <h2>{t("liveStream")}</h2>
       </div>
       <HeaderHome />
@@ -60,10 +60,10 @@ export default function Conexoes() {
         <button>{t("historic")}</button>
       </div>
 
-      <img src={bgFormasColoridas} alt="forma2" className="forma2" />
+      <img src={bgShapeColorful} alt="forma2" className="forma2" />
 
       <div className="Seja-voluntario">
-        <img src={bgFormulario} alt="imgFormulario" className="imgFormulario" />
+        <img src={bgForm} alt="imgFormulario" className="imgFormulario" />
         <div className="textoVoluntario">
           <h3>{tFormatado("becomeSpeaker")}</h3>
           <p>{t("workExperiences")}</p>
